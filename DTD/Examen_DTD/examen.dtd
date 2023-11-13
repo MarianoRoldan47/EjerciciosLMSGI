@@ -1,0 +1,29 @@
+<!ELEMENT proyectosConstruccion (#PCDATA | proyecto)*>
+<!ELEMENT personal (perito?,constructor+, conductoresMaquinaria+)>
+<!ELEMENT perito EMPTY>
+<!ELEMENT constructor EMPTY>
+<!ELEMENT conductoresMaquinaria EMPTY>
+<!ELEMENT proyecto (personal , maquinaria , (pagador | pagadoPorLaEmpresa))>
+<!ELEMENT maquinaria (maquina+)>
+<!ELEMENT maquina EMPTY>
+
+<!ELEMENT pagador (#PCDATA)>
+<!ELEMENT pagadoPorLaEmpresa EMPTY>
+
+<!ENTITY % nombrePersonal "nombre CDATA #IMPLIED">
+<!ATTLIST perito %nombrePersonal;
+                 id ID #REQUIRED>
+<!ATTLIST constructor %nombrePersonal;
+                      id ID #REQUIRED>
+<!ATTLIST conductoresMaquinaria %nombrePersonal;
+                                id ID #REQUIRED>
+
+<!ATTLIST proyecto nombre CDATA #REQUIRED>
+
+<!ATTLIST maquina usadaPor IDREFS #IMPLIED>
+<!ATTLIST maquina conductor IDREF #IMPLIED>
+<!ATTLIST proyectosConstruccion telefonoConstructora CDATA #FIXED "555666777">
+<!ATTLIST maquina nombre (Excavadora | Camion | Taladro | Alisadora) "Taladro">
+
+
+<!ENTITY nombreConstructora "Constructora Hermanos Roldan S.L.">

@@ -1,0 +1,33 @@
+<!ELEMENT fruteria (#PCDATA | frutas | verduras | ofertas | contacto)*>
+
+<!ELEMENT frutas ANY>
+<!ELEMENT verduras (tomate+, brocoli, coliflor)>
+<!ELEMENT ofertas (oferta)+>
+<!ELEMENT oferta (#PCDATA | precio)*>
+<!ELEMENT precio (#PCDATA)>
+<!ELEMENT contacto EMPTY>
+<!ELEMENT manzana EMPTY>
+<!ELEMENT pera EMPTY>
+<!ELEMENT melon EMPTY>
+<!ELEMENT tomate (delTerreno)?>
+<!ELEMENT delTerreno (#PCDATA)>
+<!ELEMENT brocoli (#PCDATA)>
+<!ELEMENT coliflor (#PCDATA)>
+
+<!ENTITY % atributoColor "color (amarillo | verde | rojo | marron | blanco ) 'verde' ">
+<!ENTITY % atributoID "id ID #REQUIRED">
+
+<!ATTLIST oferta articulo IDREF #REQUIRED>
+<!ATTLIST contacto telefono CDATA #FIXED "642160405">
+<!ATTLIST manzana %atributoColor;
+                  %atributoID;>
+<!ATTLIST pera %atributoColor;
+               %atributoID;>
+<!ATTLIST melon %atributoColor;
+                %atributoID;>
+
+<!ATTLIST tomate %atributoID;>
+<!ATTLIST brocoli %atributoID;>
+<!ATTLIST coliflor %atributoID;>
+
+<!ENTITY nombreFruteria "Fruteria Manolo S.L.">

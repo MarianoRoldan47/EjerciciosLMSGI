@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE fruteria SYSTEM "examen.dtd">
+<fruteria> &nombreFruteria; 
+	<frutas>
+		<manzana id="mzn" color="amarillo" />
+		<pera id="per" color="verde" />
+		<melon id="mln" color="verde" />
+	</frutas>
+	<verduras>
+		<tomate id="tmt">
+			<delTerreno>De Rute</delTerreno>
+		</tomate>
+		<brocoli id="brc">
+
+		</brocoli>
+		<coliflor id="clf">
+
+		</coliflor>
+	</verduras>
+	<ofertas>
+		<oferta  articulo="mzn">
+			2x1 
+			<precio>10€</precio>
+		</oferta>
+	</ofertas>
+	<contacto telefono="642160405" />
+</fruteria>

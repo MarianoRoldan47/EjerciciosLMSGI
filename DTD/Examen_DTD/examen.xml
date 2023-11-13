@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE proyectosConstruccion SYSTEM "examen.dtd">
+<proyectosConstruccion telefonoConstructora="555666777"> &nombreConstructora;
+	<proyecto nombre="Construccion edificio ayuntamiento">
+		<personal>
+			<perito nombre="Alejandro Cabello Lara" id="acl" />
+			<constructor nombre="Rafael Garcia Muñoz" id="rgm" />
+			<constructor nombre="Alberto Jimenez García" id="ajg" />
+			<conductoresMaquinaria nombre="Jose Alberto Ramirez Sarmiento" id="jars" />
+		</personal>
+		<maquinaria>
+			<maquina nombre="Excavadora" conductor="jars" />
+			<maquina nombre="Camion" conductor="jars" />
+			<maquina nombre="Taladro" usadaPor="rgm ajg" />
+			<maquina nombre="Alisadora" usadaPor="rgm ajg" />
+		</maquinaria>
+		<pagador>Ayuntamiento</pagador>
+	</proyecto>
+	<proyecto nombre="Arreglo en la sede de la constructora">
+		<personal> 
+			<constructor nombre="Rafael Roldan Muñoz" id="rrm" />
+			<constructor nombre="Alberto Jimenez Arcos" id="aja" />
+			<conductoresMaquinaria nombre="Jose Ramirez Sarmiento" id="jrs" />
+		</personal>
+		<maquinaria>
+			<maquina nombre="Excavadora" conductor="jrs" />
+			<maquina nombre="Camion" conductor="jrs" />
+			<maquina nombre="Taladro" usadaPor="rrm aja" />
+			<maquina nombre="Alisadora" usadaPor="rrm aja" />
+		</maquinaria>
+		<pagadoPorLaEmpresa />
+	</proyecto>
+	
+</proyectosConstruccion>
