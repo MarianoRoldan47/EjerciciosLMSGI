@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<superheroe xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="10-choice.xsd">
+  <nombre>Hulk</nombre>
+<!--  <edad>86</edad>
+  <bando>Buenos</bando>  -->
+</superheroe>

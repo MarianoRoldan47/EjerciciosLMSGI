@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="NumeroDelimitado" type="numero-50-60"/>
+  
+  <xs:simpleType name="numero-50-60">
+    <xs:restriction base="numero-10-100">
+      <xs:minInclusive value="50" />
+      <xs:maxInclusive value="60" />
+    </xs:restriction>  
+  </xs:simpleType>
+  
+  <xs:simpleType name="numero-10-100">
+    <xs:restriction base="xs:positiveInteger">
+      <xs:minInclusive value="10"/>
+      <xs:maxInclusive value="100"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

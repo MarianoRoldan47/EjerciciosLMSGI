@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="superheroe" type="caracSuperheroe"/>
+  
+  <xs:complexType name="caracSuperheroe">
+    <xs:all>
+      <xs:element name="nombre" type="xs:string" />
+      <xs:element name="edad" type="xs:string" />
+      <xs:element name="bando" type="xs:string" />
+    </xs:all>  
+  </xs:complexType>
+
+</xs:schema>

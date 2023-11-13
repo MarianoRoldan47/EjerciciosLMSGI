@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<superheroe xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="13-contenido-texto-y-atributos.xsd"
+nombre="Hulk" edad="86">Buen superheroe</superheroe>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="superheroe" type="mixtoConValidacion"/>
+
+  <xs:complexType name="mixtoConValidacion">
+    <xs:simpleContent>
+      <xs:extension base="minimo4Caracteres">
+        <xs:attribute name="nombre" type="xs:string" />
+        <xs:attribute name="edad" type="xs:positiveInteger" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+
+  <xs:simpleType name="minimo4Caracteres">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="4"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+</xs:schema>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<superheroe xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="15-elemento-con-descendientes.xsd">
+  <nombre>Hulk</nombre>
+  <amigo>
+    <amigoDeSuperheroe>Thor</amigoDeSuperheroe>
+  </amigo>
+  <amigo>
+    <amigoDeSuperheroe>Hulk</amigoDeSuperheroe>
+  </amigo>
+  <amigo>
+    <amigoDeSuperheroe>Bulleye</amigoDeSuperheroe>
+  </amigo>
+</superheroe>

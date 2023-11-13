@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="superheroe" type="superheroeDerivado">
+  </xs:element>
+  
+  <xs:complexType mixed="true" name="superheroePrimitivo">
+    <xs:sequence>
+      <xs:element name="nombre" type="xs:string"/>
+      <xs:element name="amigo" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  
+  <xs:complexType name="superheroeDerivado">
+    <xs:complexContent mixed="true">
+      <xs:extension base="superheroePrimitivo">
+        <xs:sequence>
+          <xs:element name="poderPrincipal" type="xs:string" />
+        </xs:sequence>
+        <xs:attribute name="edad" type="xs:string"/>
+        <xs:attribute name="color" type="xs:string"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>  
+  
+</xs:schema>

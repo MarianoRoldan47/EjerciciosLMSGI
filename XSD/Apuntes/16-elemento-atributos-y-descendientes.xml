@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<superheroe xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="16-elemento-atributos-y-descendientes.xsd" 
+edad="86" color="verde">
+  <nombre>Hulk</nombre>
+  <amigo>Thor</amigo>
+</superheroe>

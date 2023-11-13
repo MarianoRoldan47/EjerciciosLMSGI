@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<superheroe xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="xml-xsd-18-elemento-con-atributos-y-contenido-mixto.xsd" 
+edad="86" color="verde">Este texto no se podría poner sin especificar contenido mixto
+<!--  <nombre>Hulk</nombre>  -->
+  <amigo>Thor</amigo>
+  <amigo>Iron Man</amigo>
+  <amigo>Bulleye</amigo>
+</superheroe>
