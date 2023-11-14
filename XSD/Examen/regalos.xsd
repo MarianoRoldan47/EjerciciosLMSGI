@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="tiendas"  type="tipoTiendas"/>
+
+  <xs:complexType name="tipoTiendas">
+    <xs:sequence>
+      <xs:element name="tienda" type="tipoTienda" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- ejercicio 7 -->
+  <xs:complexType name="tipoTienda">
+    <xs:all>
+      <xs:element name="nombre" />
+      <xs:element name="regalos" type="tipoRegalos"/>
+    </xs:all>
+    <xs:attribute name="cif" type="xs:string" />
+    <xs:attribute name="descuentosAplicables" type="lista-descuentos" />
+  </xs:complexType>
+
+
+  <!-- ejercicio 5 -->
+  <xs:complexType name="tipoRegalos">
+    <xs:sequence>
+      <xs:element name="regalo" type="tipoRegalo"/>
+      <xs:element name="bombazo" type="tipoBombazo"/>
+    </xs:sequence>
+  </xs:complexType>
+  
+  <!-- ejercicio 12 y ejercicio 2 -->
+  <xs:complexType mixed="true" name="tipoBombazo">
+    <xs:sequence>
+      <xs:element name="url" type="tipoUrl"/>
+    </xs:sequence>
+    <xs:attribute name="codigo" type="tipoCodigo" />
+  </xs:complexType>
+  
+  <xs:complexType name="tipoRegalo">
+    <xs:complexContent mixed="true">
+      <xs:extension base="tipoBombazo">
+        <xs:sequence>
+          <xs:element name="marca" type="tipoMarca"/>
+        </xs:sequence>
+        <xs:attribute name="precio" type="numero-0-10000"/>
+        <xs:attribute name="iva" type="numeroMenores-50"/>
+        <xs:attribute name="descuento" type="tipoDescuento"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>  
+  
+  <!-- Ejercicio 11 -->
+  <xs:simpleType name="numeroMenores-50">
+    <xs:restriction base="numero-0-10000">
+      <xs:maxInclusive value="50" />
+    </xs:restriction>  
+  </xs:simpleType>
+  
+  <xs:simpleType name="numero-0-10000">
+    <xs:restriction base="xs:float">
+      <xs:minInclusive value="0"/>
+      <xs:maxInclusive value="10000"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <!-- ejercicio 10 -->
+  <xs:simpleType name="lista-descuentos">
+    <xs:list itemType="tipoDescuento"/>
+  </xs:simpleType>
+  
+  <!-- Ejercicio 9 -->
+  <xs:simpleType name="tipoDescuento">
+    <xs:union memberTypes="descuento15y10PorCiento descuento20y25PorCiento" />
+  </xs:simpleType>  
+  
+  <xs:simpleType name="descuento15y10PorCiento">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="10%" />
+      <xs:enumeration value="15%" />
+    </xs:restriction>  
+  </xs:simpleType>
+  
+  
+  <xs:simpleType name="descuento20y25PorCiento">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="20%"/>
+      <xs:enumeration value="25%"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- ejercicio 8 -->
+  <xs:simpleType name="tipoCodigo">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="(([0-9]{3})|([A-z]{3})){3}"></xs:pattern>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- ejercicio 6 -->
+  <xs:complexType name="tipoMarca">
+    <xs:choice>
+      <xs:element name="mattel" type="vacio" maxOccurs="unbounded"/>
+      <xs:element name="giochiPreziosi" type="vacio" />
+    </xs:choice>
+  </xs:complexType>
+
+  <!-- ejercicio 3 -->
+  <xs:complexType name="tipoUrl">
+    <xs:simpleContent>
+      <xs:extension base="http">
+        <xs:attribute name="tipo" type="xs:string" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+
+  <xs:simpleType name="http">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="(http)\S*(([.]com)|([.]es))\S*"></xs:pattern>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!--  ejercicio 1 -->
+  <xs:complexType name="vacio" />
+</xs:schema>

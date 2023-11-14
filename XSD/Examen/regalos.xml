@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tiendas  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="regalos.xsd">
+    <tienda cif="12345678A" descuentosAplicables="25% 20% 15% 10%">
+        <!-- La ventaja de xs:all es que los elementos puden aparecer en desorden, 
+            pero la desventaja es que solo puede aparecer ese elemento una sola vez -->
+        <nombre>ElectroTech</nombre>
+        <regalos>
+            <!-- La ventaja de xs:sequence es que los elementos pueden aparecer varias veces, 
+                pero la desventaja es que siempre van a ir en orden, 
+                primero el regalo todas las veces que aparezca y luego
+                el bombazo todas las veces que aparezca -->
+            <regalo codigo="ABC123DEF" precio="199.99" iva="21" descuento="20%">
+                Robot Inteligente
+                <url tipo="http">http://electrotech.com/robot</url>
+                <!-- Se usa xs:choice porque tiene de ventaja que se puede elegir entre diferentes elementos
+                y se puede repetir el mismo elemento varias veces, pero tiene de desventaja, que solo se puede usar uno de todos los elementos-->
+                <marca><mattel/></marca>
+            </regalo>
+            <bombazo codigo="XYZ456GHI">
+                Oferta Especial
+                <url tipo="https">https://electrotech.com/oferta-especial</url>
+            </bombazo>
+        </regalos>
+    </tienda>
+    <tienda cif="98765432B" descuentosAplicables="25% 20% 15%">
+        <nombre>SonidoPerfecto</nombre>
+        <regalos>
+            <regalo codigo="789JKL456" precio="79.99" iva="19" descuento="15%">
+                Auriculares Inalámbricos
+                <url tipo="http">http://sonidoperfecto.es/auriculares</url>
+                <marca><giochiPreziosi/></marca>
+            </regalo>
+            <bombazo codigo="456MNO789">
+                ¡Sorpresa Sonora!
+                <url tipo="https">https://sonidoperfecto.es/sorpresa-sonora</url>
+            </bombazo>
+        </regalos>
+    </tienda>
+    <tienda cif="54321678C"  descuentosAplicables="15% 10%">
+        <nombre>FraganciasElegantes</nombre>
+        <regalos>
+            <regalo codigo="PQR789XYZ" precio="149.99" iva="20" descuento="10%">
+                Set de Perfumes
+                <url tipo="https">https://fraganciaselegantes.com/perfumes</url>
+                <marca><mattel/></marca>
+            </regalo>
+            <bombazo codigo="123ABC456">
+                ¡Oferta Exclusiva!
+                <url tipo="http">http://fraganciaselegantes.com/oferta-exclusiva</url>
+            </bombazo>
+        </regalos>
+    </tienda>
+</tiendas>
