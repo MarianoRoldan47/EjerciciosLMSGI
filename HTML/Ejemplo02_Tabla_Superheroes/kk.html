@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de Hover con JavaScript</title>
+    <style>
+        /* Estilo para resaltar el fondo al hacer hover */
+        td:hover {
+            background-color: #f0f0f0;
+            cursor: pointer; /* Cambia el cursor al pasar sobre la celda */
+        }
+
+        /* Estilo para cambiar el color de fondo del body */
+        .highlight-body {
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+
+<table border="1">
+    <tr>
+        <td id="miCelda">Celda 1</td>
+        <td>Celda 2</td>
+        <td>Celda 3</td>
+    </tr>
+</table>
+
+<script>
+    // Obtener la referencia a la celda por su id
+    var miCelda = document.getElementById("miCelda");
+
+    // Agregar un listener para el evento hover
+    miCelda.addEventListener("mouseover", function() {
+        // Agregar la clase al body al hacer hover sobre la celda
+        document.body.classList.add("highlight-body");
+    });
+
+    // Agregar un listener para el evento de dejar de hacer hover
+    miCelda.addEventListener("mouseout", function() {
+        // Quitar la clase al body al dejar de hacer hover sobre la celda
+        document.body.classList.remove("highlight-body");
+    });
+</script>
+
+</body>
+</html>

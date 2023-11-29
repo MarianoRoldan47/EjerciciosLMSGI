@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <title>Tabla Superheroes</title>
+
+        <style>
+            table {
+                width: 50%;
+                border-collapse: collapse;
+            }
+
+            th, td {
+                padding: 10px;
+                border: 1px black solid;
+            }
+
+            th {
+                background-color: red;
+                color: white;
+            }
+
+            .batman:hover td {
+                background-color: black;
+                transition: 2s;
+            }
+            .batman:hover a , .batman:hover p {
+                color: gold;
+                transition: 2s;
+            }
+
+            .batman , .batman p, .batman td, .batman a{
+                transition: 2s;
+            }
+
+            .batman img {
+                width: 100px;
+                transition: 2s;
+                padding: 2px;
+            }
+
+            .batman:hover img {
+                background-color: white;
+                transition: 2s;
+                border-radius: 5px;
+            }
+
+            .superman:hover td{
+                background-color: blue;
+                transition: 1s;
+            }
+
+            .superman:hover p, .superman:hover a {
+                background-color: gold;
+                padding: 10px;
+                width: fit-content;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: 2s;
+                color: red;
+                text-decoration: none;
+
+            }
+            .superman , .superman p, .superman td, .superman a{
+                transition: 2s;
+            }
+            .superman td {
+                padding: 30px;
+            }
+            .superman p {
+                width: fit-content;
+            }
+
+
+            .superman img {
+                width: 100px;
+                transition: 2s;
+                padding: 2px;
+            }
+
+            .superman:hover img {
+                background-color: white;
+                transition: 2s;
+                border-radius: 5px;
+            }
+
+            .wonderWoman:hover td{
+                background-color: goldenrod;
+                transition: 1s;
+            }
+
+            .wonderWoman:hover p, .wonderWoman:hover a {
+                background-color: tomato;
+                padding: 10px;
+                width: fit-content;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: 2s;
+                color: lightblue;
+                text-decoration: none;
+
+            }
+            .wonderWoman , .wonderWoman p, .wonderWoman td, .wonderWoman a {
+                transition: 2s;
+            }
+
+            .wonderWoman img {
+                width: 100px;
+                transition: 2s;
+                padding: 2px;
+            }
+
+            .wonderWoman:hover img {
+                background-color: white;
+                transition: 2s;
+                border-radius: 5px;
+            }
+
+            .wonderWoman p {
+                width: fit-content;
+            }
+
+
+            .flash:hover td{
+                background-color: tomato;
+                transition: 1s;
+            }
+
+            .flash:hover p, .flash:hover a {
+                background-color: goldenrod;
+                padding: 10px;
+                width: fit-content;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: 2s;
+                color: white;
+                text-decoration: none;
+
+            }
+            .flash , .flash p, .flash td{
+                transition: 2s;
+            }
+
+            .flash img {
+                width: 100px;
+                transition: 2s;
+                padding: 2px;
+            }
+
+            .flash:hover img {
+                background-color: white;
+                transition: 2s;
+                border-radius: 5px;
+            }
+
+            .flash p {
+                width: fit-content;
+            }
+
+            tr:nth-child(even) {
+                background-color: lightgrey;
+                transition: 2s;
+            }
+
+            tr:nth-child(odd) {
+                background-color: white;
+            }
+
+            .highlight-body-batman {
+                background-image: url(https://images.milenio.com/e7NkL4ZLan_gRuPAQne9nDX9VkY=/942x532/uploads/media/2020/09/19/bruce-wayne-festeja-su-dia_0_1_1200_745.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                transition: background-image 2s;
+            }
+            .highlight-body-superman {
+                background-image: url(https://i.blogs.es/f16423/superman/1366_2000.webp);
+                background-repeat: no-repeat;
+                background-size: cover;
+                transition: background-image 2s;
+            }
+            .highlight-body-wonder {
+                background-image: url(https://w.forfun.com/fetch/40/401aaeb0f1f21ff3faee400ee2b37771.jpeg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                transition: background-image 2s;
+            }
+            
+            .highlight-body-flash {
+                background-image: url(https://images4.alphacoders.com/132/1323757.jpeg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                transition: background-image 2s;
+            }
+
+            body {
+                background-image: url(https://sm.ign.com/t/ign_es/screenshot/default/blob_n6vk.1280.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                transition: background-image 2s;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <th>Superh&eacute;roe</th>
+                <th colspan="3">Poderes</th>
+                <th>Imagen</th>
+                <th>Biograf&iacute;a</th>
+            </tr>
+            <tr class="batman" id="miFilaBatman">
+                <td><p>Batman</p></td>
+                <td colspan="3"><p>Inteligencia, habilidades de detective, habilidades marciales</p><br><p>Alias: El Caballero Oscuro</p></td>
+                <td class="imagen"><img src="img/batman.png" alt=""></td>
+                <td><a href="https://es.wikipedia.org/wiki/Batman" target="_blank">M&aacute;s sobre Batman</a></td>
+            </tr>
+            <tr class="superman" id="miFilaSuperman">
+                <td><p>Superman</p></td>
+                <td colspan="3"><p>Vuelo, super fuerza, visión de rayos X</p></td>
+                <td class="imagen"><img src="img/superman.png" alt=""></td>
+                <td><a href="https://es.wikipedia.org/wiki/Superman" target="_blank">M&aacute;s sobre Superman</a></td>
+            </tr>
+            <tr class="wonderWoman" id="miFilaWonder">
+                <td><p>Wonder <br> Woman</p></td>
+                <td colspan="3"><p>Fuerza sobrehumana, habilidades de lucha, lazos de la verdad</p></td>
+                <td class="imagen"><img src="img/wonder.png" alt=""></td>
+                <td><a href="https://es.wikipedia.org/wiki/Mujer_Maravilla" target="_blank">M&aacute;s sobre Wonder Woman</a></td>
+            </tr>
+            <tr class="flash" id="miFilaFlash">
+                <td><p>Flash</p></td>
+                <td colspan="3"><p>Velocidad sobrehumana, curvatura del tiempo</p><br><p>Miembro de la Liga de la Justicia</p></td>
+                <td class="imagen"><img src="img/flash.webp" alt=""></td>
+                <td><a href="https://es.wikipedia.org/wiki/Flash_(historieta)" target="_blank">M&aacute;s sobre Flash</a></td>
+            </tr>
+        </table>
+
+        <script>
+            // Obtener la referencia a la celda por su id
+            var miCelda = document.getElementById("miFilaBatman");
+        
+            // Agregar un listener para el evento hover
+            miCelda.addEventListener("mouseover", function() {
+                // Agregar la clase al body al hacer hover sobre la celda
+                document.body.classList.add("highlight-body-batman");
+            });
+        
+            // Agregar un listener para el evento de dejar de hacer hover
+            miCelda.addEventListener("mouseout", function() {
+                // Quitar la clase al body al dejar de hacer hover sobre la celda
+                document.body.classList.remove("highlight-body-batman");
+            });
+
+            // Superman
+
+            // Obtener la referencia a la celda por su id
+            var miCelda = document.getElementById("miFilaSuperman");
+        
+            // Agregar un listener para el evento hover
+            miCelda.addEventListener("mouseover", function() {
+                // Agregar la clase al body al hacer hover sobre la celda
+                document.body.classList.add("highlight-body-superman");
+            });
+        
+            // Agregar un listener para el evento de dejar de hacer hover
+            miCelda.addEventListener("mouseout", function() {
+                // Quitar la clase al body al dejar de hacer hover sobre la celda
+                document.body.classList.remove("highlight-body-superman");
+            });
+
+            // Wonder Woman
+
+            // Obtener la referencia a la celda por su id
+            var miCelda = document.getElementById("miFilaWonder");
+        
+            // Agregar un listener para el evento hover
+            miCelda.addEventListener("mouseover", function() {
+                // Agregar la clase al body al hacer hover sobre la celda
+                document.body.classList.add("highlight-body-wonder");
+            });
+        
+            // Agregar un listener para el evento de dejar de hacer hover
+            miCelda.addEventListener("mouseout", function() {
+                // Quitar la clase al body al dejar de hacer hover sobre la celda
+                document.body.classList.remove("highlight-body-wonder");
+            });
+
+            // Flash
+
+            // Obtener la referencia a la celda por su id
+            var miCelda = document.getElementById("miFilaFlash");
+        
+            // Agregar un listener para el evento hover
+            miCelda.addEventListener("mouseover", function() {
+                // Agregar la clase al body al hacer hover sobre la celda
+                document.body.classList.add("highlight-body-flash");
+            });
+        
+            // Agregar un listener para el evento de dejar de hacer hover
+            miCelda.addEventListener("mouseout", function() {
+                // Quitar la clase al body al dejar de hacer hover sobre la celda
+                document.body.classList.remove("highlight-body-flash");
+            });
+        </script>
+    </body>
+</html>
