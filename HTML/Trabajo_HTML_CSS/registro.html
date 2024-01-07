@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    
+    <link href="css/index.css" rel="stylesheet" type="text/css"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Rubik&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="basePagina">
+        <div class="cabecera">  
+            <img src="img/texto_pesca.png" alt="">
+        </div>
+        <div class="menuBar">
+            <div class="left">
+                    <a href="index.html">PRINCIPAL</a>
+                    <a href="canas.html">CAÑAS</a>
+                    <a href="cebo.html">CEBO</a>
+                    <a href="camping.html">CAMPING</a>
+                    <a href="aparejos.html">APAREJOS</a>
+                    <a href="hilos.html">HILOS</a>
+            </div>
+            <div class="inicio_sesion">
+                <img src="img/icono_persona.jpg" alt="">
+                <a id="primerParrafo" href="inicio_sesion.html">Inicio Sesion</a>
+                <a href="registro.html">Registrarse</a>
+            </div>
+        </div>
+
+        <div class="cuerpoReg">
+            <div class="form">
+                <form>
+                    <label for="fname">Nombre:</label><br>
+                    <input type="text" id="fname" name="fname" required placeholder="Juan" autofocus><br>
+                    <label for="lname">Apellidos:</label><br>
+                    <input type="text" id="lname" name="lname" required placeholder="Gutierrez Luz">
+                    <br>
+                    <label for="phone">Numero de telefono:</label> <br>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="666666666">
+                    <br>
+                    <label for="username">Usuario:</label><br>
+                    <input type="text" id="username" name="username" required placeholder="JuanGL"><br>
+                    <label for="birthday">Fecha de nacimiento:</label><br>
+                    <input type="date" id="birthday" name="birthday" required> 
+                    <br>
+                    <label>Correo electronico: </label>
+                    <br>
+                    <input type="email" placeholder="usuario@gmail.com" required>
+                    <br>
+                    <label for="pwd">Contraseña:</label><br>
+                    <input type="password" id="pwd" name="pwd" required>
+                    <br>
+                    <label for="pwd">Repetir contraseña:</label><br>
+                    <input type="password" id="pwd" name="pwd" required>
+                    <br> <br>
+                    <p>¿Que tipo de pesca practicas?:</p>
+                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                    <label for="vehicle1">Carpfishing</label><br>
+                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                    <label for="vehicle2">Depredadores</label><br>
+                    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                    <label for="vehicle3">Mar</label>
+                    <br><br>
+                    <p>¿Eres pescador de competicion?</p>
+                    <input type="radio">
+                    <label for="html">Si</label><br>
+                    <input type="radio" checked>
+                    <label for="css" >No</label>
+                    <br>
+                    <label for="myfile">Imagen de perfil: </label> 
+                    <br>
+                    <input type="file" id="myfile" name="myfile">
+
+                </form>
+            </div>
+           
+
+        </div>
+</body>
+</html>

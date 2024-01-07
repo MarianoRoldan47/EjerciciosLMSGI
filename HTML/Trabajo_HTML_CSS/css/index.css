@@ -1,7 +1,7 @@
 body {
     font-family: 'Noto Sans TC', sans-serif;
     font-family: 'Rubik', sans-serif;
-    
+    margin: 0px;
     background-image: url(../img/fondo_cuerpo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -75,7 +75,6 @@ body {
 /* Cuerpo de la pagina */
 .cuerpo p {
     margin: 0px;
-
 }
 .cuerpo {
     display: inline-block;
@@ -94,7 +93,13 @@ body {
     font-size: 20px;
 }
 
-.cuerpo
+.cuerpo .right img {
+    width: 100%;
+}
+
+.cuerpo .right {
+    padding-top: 0px;
+}
 
 .texto {
     border: 2px solid gray;
@@ -202,6 +207,44 @@ td {
     margin-bottom: 20px;
 }
 
+.cuerpoForm .form form {
+    padding: 50px;
+}
+.form input {
+    margin: 10px;
+}
+
+.form {
+    font-size: 20px;
+}
+
+.cuerpoForm .form input {
+    width: 200px;
+}
+
+
+/* REGISTRO */
+.cuerpoReg .form {
+    width: 100%;
+}
+
+.cuerpoReg .form {
+    display: inline-block;
+    margin: 20px;
+    background-color: white;
+    padding: 50px;
+    border-radius: 5px;
+    overflow: auto;
+}
+.cuerpoReg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cuerpoReg .form input {
+    margin-left: 0px;
+}
 
 /* CLASES TEXTO DECORACIÓN */
 
