@@ -1,0 +1,24 @@
+body {
+  background-color: #f8f9fc;
+  color: black;
+}
+
+.promoCode {
+  color: green;
+}
+
+.carrito {
+  color: grey;
+}
+
+.boton-fondo {
+  background-color: rgb(11, 94, 215);
+  color: white;
+}
+
+.boton-fondo:hover {
+  background-color: rgb(11, 94, 215);
+  color: white;
+}
+
+/*# sourceMappingURL=index.css.map */

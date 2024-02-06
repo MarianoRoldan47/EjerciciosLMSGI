@@ -1,0 +1,28 @@
+@import "colors";
+
+@mixin color-texto($color) {
+    color: $color;
+}
+
+body {
+    background-color: $color-fondo;
+    @include color-texto($color-texto)
+}
+
+.promoCode {
+    @include color-texto($color-promocode)
+}
+
+.carrito {
+    @include color-texto($color-carrito)
+}
+
+.boton-fondo {
+    background-color: $color-fondo-btn-confirmacion;
+    @include color-texto(white)
+}
+
+.boton-fondo:hover {
+    background-color: $color-fondo-btn-confirmacion;
+    @include color-texto(white)
+}
