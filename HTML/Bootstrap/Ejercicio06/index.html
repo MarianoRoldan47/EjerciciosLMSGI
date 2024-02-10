@@ -1,7 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 
-/
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 01</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="https://kit.fontawesome.com/3896197f07.js" crossorigin="anonymous"></script>
+</head>
 
 <body>
 
@@ -61,109 +71,144 @@
         </div>
       </div>
       <div class="col-sm p-3 min-vh-100">
-        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-              aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-              aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-              aria-label="Slide 3"></button>
-          </div>
+        <div class="row">
+          <div class="col">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                  aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                  aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                  aria-label="Slide 3"></button>
+              </div>
 
-          <div class="carousel-inner">
-            <div class="carousel-item active" style="background-color: grey; height: 400px;">
-              <div class="carousel-caption d-block">
-                <h5>Etiqueta de la primera diapositiva</h5>
-                <p>Algo de contenido de relleno representativo para la primera diapositiva.</p>
-              </div>
-            </div>
-            <div class="carousel-item" style="background-color: grey; height: 400px;">
-              <div class="carousel-caption d-block">
-                <h5>Etiqueta de la segunda diapositiva</h5>
-                <p>Algo de contenido de relleno representativo para la segunda diapositiva.</p>
-              </div>
-            </div>
-            <div class="carousel-item" style="background-color: grey; height: 400px;">
-              <div class="carousel-caption d-block">
-                <h5>Etiqueta de la tercera diapositiva</h5>
-                <p>Algo de contenido de relleno representativo para la tercera diapositiva.</p>
-              </div>
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Anterior</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Siguiente</span>
-          </button>
-        </div>
-      </div>
-      <div class="row">
-        <div class="container w-75 my-5">
-          <div class="row">
-            <div class="col-md-4 py-4">
-              <div class="card w-100 text-center justify-content-center align-items-center">
-                <div class="card-header py-4 ">
-                  <div class="rounded-circle" style="background-color: grey; height: 120px; width: 120px;"></div>
-                  <h3>Heading</h3>
+              <div class="carousel-inner">
+                <div class="carousel-item active" style="background-color: grey; height: 400px;">
+                  <div class="carousel-caption d-block">
+                    <h5>Etiqueta de la primera diapositiva</h5>
+                    <p>Algo de contenido de relleno representativo para la primera diapositiva.</p>
+                  </div>
                 </div>
-                <div class="card-body">
-                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut reprehenderit modi explicabo dolore
-                    quibusdam aut cupiditate vel necessitatibus obcaecati incidunt.</p>
+                <div class="carousel-item" style="background-color: grey; height: 400px;">
+                  <div class="carousel-caption d-block">
+                    <h5>Etiqueta de la segunda diapositiva</h5>
+                    <p>Algo de contenido de relleno representativo para la segunda diapositiva.</p>
+                  </div>
                 </div>
-                <div class="card-footer">
-                  <p><a class="btn btn-secondary" href="#" role="button">Learn more»</a></p>
+                <div class="carousel-item" style="background-color: grey; height: 400px;">
+                  <div class="carousel-caption d-block">
+                    <h5>Etiqueta de la tercera diapositiva</h5>
+                    <p>Algo de contenido de relleno representativo para la tercera diapositiva.</p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="col-md-4 py-4 ">
-              <div class="card w-100 text-center justify-content-center align-items-center">
-                <div class="card-header py-4 ">
-                  <div class="rounded-circle" style="background-color: grey; height: 120px; width: 120px;"></div>
-                  <h3>Heading</h3>
-                </div>
-                <div class="card-body">
-                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut reprehenderit modi explicabo dolore
-                    quibusdam aut cupiditate vel necessitatibus obcaecati incidunt.</p>
-                </div>
-                <div class="card-footer">
-                  <p><a class="btn btn-secondary" href="#" role="button">Learn more»</a></p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 py-4 ">
-              <div class="card w-100 text-center justify-content-center align-items-center">
-                <div class="card-header py-4 ">
-                  <div class="rounded-circle" style="background-color: grey; height: 120px; width: 120px;"></div>
-                  <h3>Heading</h3>
-                </div>
-                <div class="card-body">
-                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut reprehenderit modi explicabo dolore quibusdam
-                    aut cupiditate vel necessitatibus obcaecati incidunt.</p>
-                </div>
-                <div class="card-footer">
-                  <p><a class="btn btn-secondary" href="#" role="button">Learn more»</a></p>
-                </div>
-              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+              </button>
             </div>
           </div>
         </div>
+        <div class="row">
+          <div class="col">
+            <div class="row">
+              <div class="container w-75 my-5">
+                <div class="row mb-5">
+                  <div class="col-md-4 py-4">
+                    <div class="card w-100 text-center align-items-center p-4">
+                      <div class="rounded-circle" style="background-color: grey; height: 120px; width: 120px;"></div>
+                      <div class="card-body">
+                        <h3 class="card-title">Heading</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut reprehenderit modi explicabo
+                          dolore
+                          quibusdam aut cupiditate vel necessitatibus obcaecati incidunt.</p>
+                      </div>
+                      <p><a class="btn btn-secondary" href="#" role="button">Learn more»</a></p>
+                    </div>
+                  </div>
+                  <div class="col-md-4 py-4">
+                    <div class="card w-100 text-center align-items-center p-4">
+                      <div class="rounded-circle" style="background-color: grey; height: 120px; width: 120px;"></div>
+                      <div class="card-body">
+                        <h3 class="card-title">Heading</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut reprehenderit modi explicabo
+                          dolore
+                          quibusdam aut cupiditate vel necessitatibus obcaecati incidunt.</p>
+                        <p><a class="btn btn-secondary" href="#" role="button">Learn more»</a></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 py-4 ">
+                    <div class="card w-100 text-center align-items-center p-4">
+                      <div class="rounded-circle" style="background-color: grey; height: 120px; width: 120px;"></div>
+                      <div class="card-body">
+                        <h3 class="card-title">Heading</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut reprehenderit modi explicabo
+                          dolore
+                          quibusdam aut cupiditate vel necessitatibus obcaecati incidunt.</p>
+                        <p><a class="btn btn-secondary" href="#" role="button">Learn more»</a></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row mt-5">
+                  <div class="col">
+                    <hr>
+                    <div class="row py-3">
+                      <div class="col-md-8 d-flex align-items-center order-md-1">
+                        <div>
+                          <h1>First featurette heading. It' ll blow your mind</h1>
+                          <p>Some great placeholder content for the first featurette here. Imagine some exciting
+                            prose here</p>
+                        </div>
+                      </div>
+                      <div class="col-md-4 order-md-2">
+                        <img class="img-fluid" src="https://dummyimage.com/500x500/ededed/a6a6a6" alt="imagen">
+                      </div>
+                    </div>
+                    <hr>
+                    <div class="row py-3">
+                      <div class="col-md-8 d-flex align-items-center order-md-2">
+                        <div>
+                          <h1>Oh yeah, it's that good. See for yourself.</h1>
+                          <p>Another featurette? Of course. More placeholder content here to give you an idea of how
+                            this
+                            layout would work with some actual real-world content in place</p>
+                        </div>
+                      </div>
+                      <div class="col-md-4 order-md-1">
+                        <img class="img-fluid" src="https://dummyimage.com/500x500/ededed/a6a6a6" alt="imagen">
+                      </div>
+                    </div>
+                    <hr>
+                    <div class="row py-3">
+                      <div class="col-md-8 d-flex align-items-center order-md-1">
+                        <div>
+                          <h1>First featurette heading. It' ll blow your mind</h1>
+                          <p>Some great placeholder content for the first featurette here. Imagine some exciting
+                            prose here</p>
+                        </div>
+                      </div>
+                      <div class="col-md-4 order-md-2">
+                        <img class="img-fluid" src="https://dummyimage.com/500x500/ededed/a6a6a6" alt="imagen">
+                      </div>
+                    </div>
+                    <hr>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      
     </div>
   </div>
-
-
-
-
-
-
-
-
-
 </body>
