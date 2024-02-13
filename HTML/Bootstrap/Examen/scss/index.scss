@@ -1,0 +1,33 @@
+@import "colors";
+
+@mixin color-texto($color) {
+    color: $color;
+}
+
+body {
+    background-color: $color-fondo-pagina;
+    @include color-texto($color-texto)
+}
+
+.sass-colorTextoWhat {
+    @include color-texto(white);
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.sass-colorTextoABetter {
+    @include color-texto(black);
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.btn-personal {
+    background-color: $color-boton-primario;
+    @include color-texto(white)
+}
+
+.btn-personal:hover {
+    background-color: $color-boton-primario;
+    @include color-texto(white);
+    border: 1px solid white;
+}

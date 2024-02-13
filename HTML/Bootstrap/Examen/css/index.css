@@ -1,0 +1,29 @@
+body {
+  background-color: white;
+  color: black;
+}
+
+.sass-colorTextoWhat {
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.sass-colorTextoABetter {
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.btn-personal {
+  background-color: blue;
+  color: white;
+}
+
+.btn-personal:hover {
+  background-color: blue;
+  color: white;
+  border: 1px solid white;
+}
+
+/*# sourceMappingURL=index.css.map */
