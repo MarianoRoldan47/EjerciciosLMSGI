@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<fo:root xmlns:fo="http://www.w3.org/1999/XSL/Format">
+    <fo:layout-master-set>
+        <fo:simple-page-master master-name="A4" page-width="210mm" page-height="297mm" margin-top="1cm" margin-bottom="1cm" margin-left="1cm" margin-right="1cm">
+            <fo:region-body margin="1cm"/>
+            <fo:region-before extent="1cm"/>
+            <fo:region-after extent="1cm"/>
+            <fo:region-start extent="1cm"/>
+            <fo:region-end extent="1cm"/>
+        </fo:simple-page-master>
+    </fo:layout-master-set>
+    <fo:page-sequence master-reference="A4">
+        <fo:title>Don Quijote de la Mancha</fo:title>
+        <fo:static-content flow-name="xsl-region-before">
+            <fo:block font-family="Arial" font-size="9pt" text-align="right" text-decoration="underline">Don Quijote de la Mancha</fo:block>
+        </fo:static-content>
+        <fo:static-content flow-name="xsl-region-after">
+            <fo:block font-family="Arial" font-size="9pt" text-align="center" text-decoration="underline">Ediciones Rafa Muñoz</fo:block>
+        </fo:static-content>
+        <fo:static-content flow-name="xsl-region-start">
+            <fo:block-container reference-orientation="90">
+                <fo:block font-family="Arial" font-size="9pt" text-align="center">Margen izquierdo</fo:block>
+            </fo:block-container>            
+        </fo:static-content>
+        <fo:static-content flow-name="xsl-region-end">
+            <fo:block-container reference-orientation="270">
+                <fo:block font-family="Arial" font-size="9pt" text-align="center">Margen derecho</fo:block>
+            </fo:block-container>            
+        </fo:static-content>
+        <fo:flow flow-name="xsl-region-body">
+           
+            <fo:block-container font-family="Arial" font-size="10pt" line-height="1.5" text-align="justify" text-indent="1cm" id="Referencia-interna">
+                <fo:block >
+                    <fo:inline color="blue" font-size="16pt" font-weight="bold">En</fo:inline> un lugar de la Mancha, de cuyo nombre no quiero acordarme, no ha mucho tiempo que vivía un hidalgo de los de lanza en astillero, 
+                    adarga antigua, rocín flaco y galgo corredor. Una olla de algo más vaca que carnero, salpicón las más noches, duelos y quebrantos los sábados, 
+                    lentejas los viernes, algún palomino de añadidura los domingos, consumían las tres partes de su hacienda. El resto della concluían sayo de 
+                    velarte, calzas de velludo para las fiestas con sus pantuflos de lo mismo, los días de entre semana se honraba con su vellori de lo más fino. 
+                    Tenía en su casa una ama que pasaba de los cuarenta, y una sobrina que no llegaba a los veinte, y un mozo de campo y plaza, que así ensillaba 
+                    el rocín como tomaba la podadera. Frisaba la edad de nuestro hidalgo con los cincuenta años, era de complexión recia, seco de carnes, enjuto de 
+                    rostro; gran madrugador y amigo de la caza. Quieren decir que tenía el sobrenombre de Quijada o Quesada (que en esto hay alguna diferencia en los 
+                    autores que deste caso escriben), aunque por conjeturas verosímiles se deja entender que se llama Quijana; pero esto importa poco a nuestro cuento; 
+                    basta que en la narración dél no se salga un punto de la verdad.
+                </fo:block>
+            </fo:block-container>            
+ 
+            <fo:block><fo:leader /></fo:block>
+            <fo:block><fo:leader /></fo:block>
+
+            <fo:block text-align="center">Ejemplo de tabla</fo:block>
+
+            <fo:block><fo:leader /></fo:block>
+
+            <fo:table border-left-width="2mm" width="100%" border-collapse="separate">
+                <fo:table-column/>
+                <fo:table-column/>
+                
+                <fo:table-header>
+                    <fo:table-cell>
+                        <fo:block>Título de Columna 1</fo:block>
+                    </fo:table-cell>
+                    <fo:table-cell>
+                        <fo:block>Título de Columna 2</fo:block>
+                    </fo:table-cell>
+                </fo:table-header>
+                
+                <fo:table-body>
+                    <fo:table-row>
+                        <fo:table-cell>
+                            <fo:block>Celda 1 - 1</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell>
+                            <fo:block>Celda 1 - 2</fo:block>
+                        </fo:table-cell>
+                    </fo:table-row>
+                    <fo:table-row>
+                        <fo:table-cell>
+                            <fo:block>Celda 2 - 1</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell>
+                            <fo:block>Celda 2 - 2</fo:block>
+                        </fo:table-cell>
+                    </fo:table-row>
+                </fo:table-body>
+            </fo:table>
+            
+            <fo:block><fo:leader /></fo:block>
+            
+            <fo:block>
+                Ejemplo de enlace interno: <fo:basic-link internal-destination="Referencia-interna" text-decoration="underline" color="blue">clic para ir al principio del documento</fo:basic-link>
+            </fo:block>
+            <fo:block>
+                Ejemplo de enlace externo: <fo:basic-link external-destination="url(http://www.google.es)" text-decoration="underline" color="blue">clic a google</fo:basic-link>
+            </fo:block>
+            
+            <fo:block><fo:leader /></fo:block>
+            
+            <fo:block text-align="center">Ejemplo de imagen</fo:block>
+            <fo:block text-align="center"><fo:external-graphic src="url(../image/marvel.jpg)" content-height="90%" scaling="uniform"/></fo:block>
+        </fo:flow>
+    </fo:page-sequence>
+</fo:root>

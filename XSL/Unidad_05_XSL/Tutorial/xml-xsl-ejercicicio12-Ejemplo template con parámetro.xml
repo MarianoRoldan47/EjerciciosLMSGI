@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="xml-xsl-ejercicicio12.xsl"?>
+
+<marvel>
+  <superheroe nombre="Thor" imagen="https://static1.ara.cat/clip/bb9a1c21-ce80-4b48-b293-c91f8c37534e_16-9-aspect-ratio_default_0.jpg" color="#FF0000" poderes="Martillo mágico, Dios, Fuerza" amigos="Iron Man y Hulk" nivel="7"/>
+  <superheroe nombre="Hulk" imagen="https://upload.wikimedia.org/wikipedia/commons/a/a0/Hulk_%282540708438%29.jpg" color="#00FF00" poderes="Superfuerza, indestructible" amigos="Iron Man y Thor" nivel="8"/>
+  <superheroe nombre="Iron Man" color="#aba54d" poderes="Armadura, intelecto superior" amigos="Hulk y Thor" nivel="6"/>
+  <superheroe nombre="Capitán América" color="#0000FF" poderes="fuerza, resistencia, superguerrero" amigos="Iron Man" nivel="6"/>
+  <superheroe nombre="Viuda Negra" color="#000000" poderes="coordinación, luchadora" amigos="No tiene" nivel="6"/>
+  <superheroe nombre="Nick Furia" color="#FFFFFF" poderes="coordinación, luchadora" amigos="No tiene" nivel="6"/>
+</marvel>

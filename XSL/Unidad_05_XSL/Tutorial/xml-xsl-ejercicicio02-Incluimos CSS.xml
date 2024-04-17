@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="xml-xsl-ejercicicio02.xsl"?>
+
+<superheroe>
+  <nombre>Thor</nombre>
+  <poderes>Martillo mágico, Dios, Fuerza
+  	<invulnerable>Sí</invulnerable>
+  </poderes>
+  <amigos>Iron Man y Hulk</amigos>
+</superheroe>

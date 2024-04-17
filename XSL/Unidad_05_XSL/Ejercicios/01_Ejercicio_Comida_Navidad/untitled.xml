@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="navidad.xsl" ?>
+<celebracion name="Comida Navidad">
+    <menu>
+        <plato>Patatas bravas</plato>
+        <plato>Entrecot ternera 1ª</plato>
+        <plato>Danonino</plato>
+    </menu>
+    <espirituosas>
+        <bebida nombre="licor de hierbas"/>
+        <bebida nombre="Cocacola Zero"/>
+        <bebida nombre="Fanta naranja"/>
+    </espirituosas>
+</celebracion>

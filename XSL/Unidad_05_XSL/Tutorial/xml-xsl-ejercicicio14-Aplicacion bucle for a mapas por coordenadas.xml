@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="xml-xsl-ejercicicio14.xsl"?>
+
+<marvel>
+  <superheroe nombre="Thor" x="1" y="1"/>
+  <superheroe nombre="Hulk" x="3" y="1"/>
+  <superheroe nombre="Iron Man" x="1" y="2"/>
+  <superheroe nombre="Capitán América" x="2" y="2"/>
+  <superheroe nombre="Viuda Negra" x="1" y="3"/>
+  <superheroe nombre="Nick Furia" x="3" y="3"/>
+</marvel>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="iqea.xsl" type="text/xsl"?>
+
+<cine nombre="ArteOcho Lucena">
+    <titulo estreno="23/03/2016" nombre="Batman vs Superman: El Amanecer de la Justicia">
+        <imagen>http://www.webdidacticarafaelmunoz.appspot.com/lmsgi/image/batmanvssumperman/Batman-Vs-Superman.jpg</imagen>
+    </titulo>
+    <sesiones>
+        <imagen id="libre">http://www.webdidacticarafaelmunoz.appspot.com/lmsgi/image/batmanvssumperman/libre.png</imagen>
+        <imagen id="libre">http://www.webdidacticarafaelmunoz.appspot.com/lmsgi/image/batmanvssumperman/ocupado.png</imagen>
+        <sesion hora="16:30">
+            <ocupado fila="2" asiento="3">http://www.webdidacticarafaelmunoz.appspot.com/lmsgi/image/batmanvssumperman/ocupado.png</ocupado>
+            <ocupado fila="2" asiento="4">http://www.webdidacticarafaelmunoz.appspot.com/lmsgi/image/batmanvssumperman/ocupado.png</ocupado>
+            <ocupado fila="4" asiento="1">http://www.webdidacticarafaelmunoz.appspot.com/lmsgi/image/batmanvssumperman/ocupado.png</ocupado>
+        </sesion>
+        <sesion hora="18:30">
+            <ocupado fila="3" asiento="2">http://www.webdidacticarafaelmunoz.appspot.com/lmsgi/image/batmanvssumperman/ocupado.png</ocupado>
+            <ocupado fila="3" asiento="3">http://www.webdidacticarafaelmunoz.appspot.com/lmsgi/image/batmanvssumperman/ocupado.png</ocupado>
+            <ocupado fila="1" asiento="2">http://www.webdidacticarafaelmunoz.appspot.com/lmsgi/image/batmanvssumperman/ocupado.png</ocupado>
+            <ocupado fila="1" asiento="3">http://www.webdidacticarafaelmunoz.appspot.com/lmsgi/image/batmanvssumperman/ocupado.png</ocupado>
+        </sesion>
+    </sesiones>   
+    <imagenes>
+        <imagen id="muebles1">http://www.webdidacticarafaelmunoz.appspot.com/lmsgi/image/iqea/muebles1.gif</imagen>
+        <imagen id="muebles2">http://www.webdidacticarafaelmunoz.appspot.com/lmsgi/image/iqea/muebles2.gif</imagen>
+        <imagen id="food1">http://www.webdidacticarafaelmunoz.appspot.com/lmsgi/image/iqea/food1.gif</imagen>
+        <imagen id="food2">http://www.webdidacticarafaelmunoz.appspot.com/lmsgi/image/iqea/food2.gif</imagen>
+        <imagen id="food3">http://www.webdidacticarafaelmunoz.appspot.com/lmsgi/image/iqea/food3.gif</imagen>
+    </imagenes>
+    
+</cine>

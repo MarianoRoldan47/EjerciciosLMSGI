@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="xml-xsl-ejercicicio09.xsl"?>
+
+<marvel>
+  <superheroe nombre="Thor" poderes="Martillo mágico, Dios, Fuerza" amigos="Iron Man y Hulk"/>
+  <superheroe nombre="Hulk" poderes="Superfuerza, indestructible" amigos="Iron Man y Thor"/>
+  <superheroe nombre="Iron Man" poderes="Armadura, intelecto superior" amigos="Hulk y Thor"/>
+</marvel>

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="xml-xsl-ejercicicio05.xsl"?>
+
+<marvel>
+  <superheroe>
+    <nombre>Thor</nombre>
+    <poderes>Martillo mágico, Dios, Fuerza</poderes>
+    <amigos>Iron Man y Hulk</amigos>
+  </superheroe>
+  <superheroe>
+    <nombre>Hulk</nombre>
+    <poderes>Superfuerza, indestructible</poderes>
+    <amigos>Iron Man y Thor</amigos>
+  </superheroe>
+  <superheroe>
+    <nombre>Iron Man</nombre>
+    <poderes>Armadura, intelecto superior</poderes>
+    <amigos>Hulk y Thor</amigos>
+  </superheroe>
+  <supervillano>
+    <nombre>Dr Muerte</nombre>
+    <poderes>Armadura, intelecto superior</poderes>
+    <amigos>Hulk y Thor</amigos>
+  </supervillano>
+</marvel>

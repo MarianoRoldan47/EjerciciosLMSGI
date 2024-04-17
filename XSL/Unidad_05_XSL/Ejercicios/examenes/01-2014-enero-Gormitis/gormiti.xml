@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="gormiti-ap-b.xsl" type="text/xsl"?>
+<gormitis>
+    <gormiti tribu="volcan">http://webdidacticarafaelmunoz.appspot.com/lmsgi/ejercicios-cap5/examen/2014-enero/gormitis/volcan.png</gormiti>
+    <gormiti tribu="agua">http://webdidacticarafaelmunoz.appspot.com/lmsgi/ejercicios-cap5/examen/2014-enero/gormitis/agua.png</gormiti>
+    <gormiti tribu="aire">http://webdidacticarafaelmunoz.appspot.com/lmsgi/ejercicios-cap5/examen/2014-enero/gormitis/aire.jpg</gormiti>
+    <gormiti tribu="bosque">http://webdidacticarafaelmunoz.appspot.com/lmsgi/ejercicios-cap5/examen/2014-enero/gormitis/bosque.png</gormiti>
+    <gormiti tribu="montana">http://webdidacticarafaelmunoz.appspot.com/lmsgi/ejercicios-cap5/examen/2014-enero/gormitis/montana.jpg</gormiti>
+    <tablero url="http://webdidacticarafaelmunoz.appspot.com/lmsgi/ejercicios-cap5/examen/2014-enero/gormitis/islagorm.jpg">
+      <gormitiEnMapa x="2" y="1" tribu="volcan"/>
+      <gormitiEnMapa x="1" y="2" tribu="agua"/>
+      <gormitiEnMapa x="1" y="0" tribu="aire"/>
+      <gormitiEnMapa x="0" y="1" tribu="bosque"/>
+      <gormitiEnMapa x="2" y="2" tribu="montana"/>
+  </tablero>
+</gormitis>
