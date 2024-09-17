@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="voleybol.xsl" type="text/xsl"?>
+<ligaVoleibol pais="España" nombreLiga="Superliga española">
+    <clasificacion fecha="29-04-2024">
+        <equipo puntos="32" Jugados="22" ganados="11" perdidos="11" id="tenerife"><nombre>Cisneros Alter Tenerife</nombre></equipo>
+        <equipo puntos="52" Jugados="22" ganados="17" perdidos="5" id="herce"><nombre>Grupo Herce Soria</nombre></equipo>
+        <equipo puntos="39" Jugados="22" ganados="15" perdidos="7" id="pamesa"><nombre>Pamesa Teruel Voleibol</nombre></equipo>
+        <equipo puntos="59" Jugados="22" ganados="20" perdidos="2" id="guguas"><nombre>CV Guaguas</nombre></equipo>
+        <equipo puntos="54" Jugados="22" ganados="18" perdidos="4" id="unicaja"><nombre>Unicaja Costa de Almería</nombre></equipo>
+        <equipo puntos="39" Jugados="22" ganados="13" perdidos="9" id="melilla"><nombre>CV Melilla</nombre></equipo>
+    </clasificacion>
+    <recursos>
+        <imagenes>
+            <img id="guguas"><url>imagenes/cvguaguas.png</url></img>
+            <img id="unicaja"><url>imagenes/unicajaCostaAlmeria.png</url></img>
+            <img id="herce"><url>imagenes/grupoHerceSoria.png</url></img>
+            <img id="pamesa"><url>imagenes/PamesaTeruel.png</url></img>
+            <img id="melilla"><url>imagenes/cvMelilla.png</url></img>
+            <img id="tenerife"><url>imagenes/cisnerosAlterTenerife.png</url></img>
+        </imagenes>
+    </recursos>
+    <mapa imagen="imagenes/mapaEspana.png">
+        <equipo id="tenerife">
+            <CoordenadaX valor="1"/><coordenadaY valor="10"/>
+        </equipo>
+        <equipo id="herce">
+            <CoordenadaX valor="7"/><coordenadaY valor="3"/>
+        </equipo>
+        <equipo id="pamesa">
+            <CoordenadaX valor="8"/><coordenadaY valor="4"/>
+        </equipo>
+        <equipo id="guguas">
+            <CoordenadaX valor="2"/><coordenadaY valor="10"/>
+        </equipo>
+        <equipo id="unicaja">
+            <CoordenadaX valor="7"/><coordenadaY valor="9"/>
+        </equipo>
+        <equipo id="melilla">
+            <CoordenadaX valor="6"/><coordenadaY valor="10"/>
+        </equipo>
+    </mapa>
+</ligaVoleibol>
